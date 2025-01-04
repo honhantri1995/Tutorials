@@ -1,0 +1,21 @@
+Dec 14 16:04:38 centos8.linuxvmimages.local systemd[1]: Starting My SystemD Service...
+-- Subject: Unit myservice.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+--
+-- Unit myservice.service has begun starting up.
+Dec 14 16:04:38 centos8.linuxvmimages.local myservice[76541]: Service is running...
+Dec 14 16:04:38 centos8.linuxvmimages.local systemd[1]: Started My SystemD Service.
+-- Subject: Unit myservice.service has finished start-up
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+--
+-- Unit myservice.service has finished starting up.
+--
+-- The start-up result is done.
+Dec 14 16:04:48 centos8.linuxvmimages.local systemd[1]: myservice.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+--
+-- The unit myservice.service has successfully entered the 'dead' state.

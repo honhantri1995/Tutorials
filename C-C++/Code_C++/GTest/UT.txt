@@ -1,0 +1,5 @@
+- Template functions in header files.
+- Mocking virtual member function of class which is also code-under-test.
+- Mocking non-virtual member function of class which is also code-under-test.
+- Using gcov
+- Testing ctor and dtor

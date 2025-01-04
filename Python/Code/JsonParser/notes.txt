@@ -1,0 +1,23 @@
+- Support basic operations of JSON parser, including:
+  + read file
+  + write file
+  + get item from file
+  + add item to file
+  + remove item from file
+  + update existing item in file
+  + check if item exists or not
+  + clear file
+
+- Support file lock in multi-threads
+
+- Auto create an empty JSON file if not exist
+
+ADVANTAGES:
+- Support maximized OOP by using objects instead of string dicts
+- Allow inheritance
+
+NOTES:
+- Design and implement for JSON files used for database purpose. Not very suitable for JSON files used for configuration purpose.
+
+LIMITATIONS:
+- To be able to work, JSON root object must has item called "id" as its unique identifier

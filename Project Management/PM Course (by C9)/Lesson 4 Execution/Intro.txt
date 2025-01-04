@@ -1,0 +1,12 @@
+Project Execution
+
+Last modified by Phuc Ngo Hoang on 2021/10/25, 02:06
+Giới thiệu
+Trong quản lý dự án, nhiệm vụ kiểm soát, đo lường và thực thi (project execution) của Giám đốc dự án (Project Manager - PM) được thực hiện liên tục lặp đi lặp lại, và chiếm nhiều thời lượng nhất trong suốt vòng đời của dự án. Mục đích chính là làm sao dẫn dắt đội ngủ dự án tạo ra sản phẩm, hạng mục giao hàng, đáp ứng mong đợi của khách hàng, cũng như hoàn thành các mục tiêu dự án đã đề ra theo kế hoạch.
+
+Trong quá trình thực thi này, PM cần phải đầu tư nhiều tâm huyết, trí tuệ và công sức của mình vào 3 chú ý sau:
+
+Build Progressive Deliverables: Các hoạt động phát hiện sớm (early detection - như chủ động kiểm soát yêu cầu + bản thiết kế của sán phẩm, quản lý chặc chẽ sự biến động của các thông số dự án, quản lý công việc của các thành viên ...), cần phải được thực hiện liên tục nhằm để để tăng dần độ chín của các sản phẩm, hạng mục giao hàng.
+Effective Communication: Mặc dù tiến độ của dự án có vẻ đang tốt dần lên, nhưng việc giao tiếp hiệu quả và thường xuyên hơn của người lãnh đạo dự án có thể thúc đẩy quá trình thực hiện dự án và giúp nhóm dự án đạt được nhiều mục tiêu hơn.
+Leadership: Trong quá trình thực thi, điều mà người lãnh đạo dự án phải luôn ghi nhớ và tuân thủ đó là vai trò của người lãnh đạo là ảnh hưởng, gắn kết và thúc đẩy mọi người tiếp tục làm việc hướng tới một mục tiêu chung.
+Nội dung chi tiết, hãy xem trong slides đính kèm.

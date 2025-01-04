@@ -1,0 +1,14 @@
+Project Control
+Last modified by Phuc Ngo Hoang on 2021/10/25, 01:57
+
+Giới thiệu
+Công tác giám sát tiến độ và kiểm soát tình trạng dự án (monitoring and controlling) là một hoạt động rất quan trọng đối với vai trò Project Manager (PM) trong quản lý dự án. Nó tương tự như việc tài xế điều khiển một chuyến xe đi từ điểm đầu đến điểm cuối của một tuyến đường. Tài xế được ví như PM, chuyến xe là Project, trong đó có chở các hành khách, là Team Members, tuyến đường là Success Path của dự án đó. Ngoài việc cầm tay lái đưa chuyến xe tiến lên phía trước, tài xế còn phải luôn liếc mắt nhìn vào bảng điều khiển của chiếc xe, nơi có trang bị loạt đồng hồ để hiển thị các thông số của chuyến xe trong lúc vận hành, chẳng hạn như tốc độ di chuyển, mức xăng còn trong bình, nhiệt độ máy, số vòng quay máy .... Tùy vào tính trạng cụ thể, tài xế sẽ có thao tác điều khiển liên tục và hợp lý để đảm bảo chuyến xe di chuyển, đi đúng cung đường và thời gian như đã lên lịch trình, một cách suông sẽ và về đích thành công. Các hoạt động Project Control (kiềm soát dự án) cũng nhiều áp lực và đòi hỏi PM luôn vận hành Plan - Do - CHECK - Act (including adjust the plan), chính là chu trình PDCA - cải tiến liên tục được Tiến sĩ Deming giới thiệu cho người Nhật trong những năm 1950, để đảm bảo dự án được thực thi một cách hợp lý, theo đúng lịch trình, sử dụng đúng ngân sách, hoàn thành các mục tiêu ban đầu đề ra và quan trọng nhất là giao sản phẩm thành công đến khách hàng của mình.
+
+Trong bài viết này, sẽ giới thiệu nhiều phương pháp, công cụ và quy trình giúp cho PM áp dụng để kiểm soát dự án, bao gồm cả những công cụ, quy trình vá hướng dẫn được chuẩn hóa trong M&C Project Management Processes. Nội dung bao gồm các điểm quan trọng như sau:
+
+Project Control Basics: cơ bản về các nguyên tắc, công cụ sử dụng trong công tác kiểm soát dự án.
+Reports and Communication Management: phương pháp kiểm soát và quản trị các kênh liên lạc và báo cáo trong dự án. Phân biệt communication type: Synchronous, Asynchronous; communication style: Analytical, Intuitive, Functional, Personal.
+Requirement Management: kiểm soát, quán lý yêu cầu dụ án.
+Quality Management: kiểm soát, quản lý chất lượng dự án: quality control gates, completion criteria
+Tips of Effective Project Control: Early Detection = Prevention ...
+Nội dung chi tiết, hãy xem trong slides đính kèm.

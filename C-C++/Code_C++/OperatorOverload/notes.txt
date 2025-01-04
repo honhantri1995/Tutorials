@@ -1,0 +1,6 @@
+Why "m_dateAsString" needs to be "mutable"?
+--> Because "getDateAsString() const" need to modify these members
+
+Why don't just remove "const" out of "getDateAsString()"
+--> Because "rhs" in "std::ostream& operator<<(std::ostream& os, const Date& rhs)" need to be "const"
+    --> Because it's the syntax of overloaded operator<<

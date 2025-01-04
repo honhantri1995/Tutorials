@@ -1,0 +1,17 @@
+{
+  "set": "true",
+  "disable": false,
+  "enable": {
+    "abc": false,
+    "xyz": 1
+  },
+  "infod": 1.0,
+  "info": {
+    "infoId": "123123123123",
+    "infoDetails": {
+      "abc": false,
+      "xyz": 1,
+      "mnc": 1.0
+    }
+  }
+}

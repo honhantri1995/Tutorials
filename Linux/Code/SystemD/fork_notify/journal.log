@@ -1,0 +1,23 @@
+Dec 15 04:30:15 centos8.linuxvmimages.local systemd[1]: Starting My SystemD Service...
+-- Subject: Unit myservice.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+--
+-- Unit myservice.service has begun starting up.
+Dec 15 04:30:15 centos8.linuxvmimages.local myservice[177237]: Service 177237 is running...
+Dec 15 04:30:15 centos8.linuxvmimages.local myservice[177237]: Service 177243 was forked succcessfully from service 177237
+Dec 15 04:30:15 centos8.linuxvmimages.local myservice[177237]: Service 177237 will be stopped here
+Dec 15 04:30:15 centos8.linuxvmimages.local systemd[1]: myservice.service: Failed with result 'protocol'.
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+--
+-- The unit myservice.service has entered the 'failed' state with result 'protocol'.
+Dec 15 04:30:15 centos8.linuxvmimages.local systemd[1]: Failed to start My SystemD Service.
+-- Subject: Unit myservice.service has failed
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+--
+-- Unit myservice.service has failed.
+--
+-- The result is failed.

@@ -1,0 +1,22 @@
+Project Management Fundamentals
+
+Last modified by Phuc Ngo Hoang on 2021/10/14, 01:33
+Giới thiệu
+Quản lý dự án (project management) là công việc quan trọng bậc nhất, kéo dài xuyên suốt toàn bộ thời gian của một dự án phát triển phần mềm. Giám đốc dự án (Project Manager - PM) là người nắm giữ đầy đủ quyền hạn và có trách nhiệm cao nhất trong mọi tác vụ của công việc quản lý dự án, nhằm đảm bảo cho dự án được thực hiện thành công, đem lại cho khách hàng những sản phẩm, dịch vụ mới, có giá trị, hữu ích, phục vụ trong các hoạt động tác nghiệp kinh doanh, đời sống, tinh thần hàng ngày của họ.
+
+Bài viết này sẽ nêu ra một số giải thích, thảo luận cho một số câu hỏi liên quan đến vai trò và nhiệm vụ Giám đốc dự án trong các dự án phát triển phần mềm tại Công ty và Tập đoàn M&C. Đó là:
+
+Why Do Projects Need Managers - Tại sao các dự án lại cần Giám đốc dự án?
+What Is a Project Manager - Giám đốc dự án là gì?
+Key Responsibilities of a Project Manager - Nhiệm vụ chính là gì?
+Key Skills of a Project Manager - Kỹ năng chính là gì?
+Key Attributes of a Project Manager - Giám đốc dự án có tính chất gì?
+What is a Project Team Resources? - Nguồn lục nhân sự của dự án là gì?
+Team Members Characteristics? - Đặc điểm của nhân sự trong đội dự án?
+What is a Project? - Định nghĩa Dự án là gì?
+What is Project Management? - Công việc quản lý dự án bao gồm những activities gì: Planning, Organizing, Controlling, Implementing, Leading?
+Project Management Life Cycle and Standards? - Vòng đời quản lý dự án được quy định như thế nào trong cá Tiêu chuẩn quốc tế?
+M&C Project Management Processes - Các nhóm quy trình Quản lý dự án trong tập đoàn M&C là gì?
+Why Are Project Challenging? - Các thách thức trong dự án phát triển phần mềm?
+Be Prepared, Plan Ahead - Chuẩn bị những gì từ một số sai lầm đã mắc phải?
+Nội dung chi tiết, hãy xem trong slides đính kèm.

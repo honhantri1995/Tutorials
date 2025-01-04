@@ -1,0 +1,11 @@
+All observers (CurrentConditionDisplay, ForecastDisplay, etc.) don't need to know either ISubject or WeatherData.
+It only needs to know its interface - IObserver, of course.
+--> Observers (most varied elements) are totally separate from others (Design Principle 1)
+
+WhetherData only needs to know interface IObserver (and its interface - ISubject, of course) (Design Principle 2)
+--> The subject and observers are loosely coupled (Design Principle 4)
+--> No matter how many observers are added, no need to modify WeatherData
+
+main() needs to know the subject and all observers (concrete, not interface)
+--> It's the only place where we allocate and deallocate memory
+--> When a new observer is added, main() is the only place that needs to be modified

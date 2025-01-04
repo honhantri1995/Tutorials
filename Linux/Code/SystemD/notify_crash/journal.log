@@ -1,0 +1,32 @@
+ec 14 16:28:45 centos8.linuxvmimages.local systemd[1]: Starting My SystemD Service...
+-- Subject: Unit myservice.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+--
+-- Unit myservice.service has begun starting up.
+Dec 14 16:28:45 centos8.linuxvmimages.local myservice[84452]: Service is running...
+Dec 14 16:28:45 centos8.linuxvmimages.local systemd[1]: Started My SystemD Service.
+-- Subject: Unit myservice.service has finished start-up
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+--
+-- Unit myservice.service has finished starting up.
+--
+-- The start-up result is done.
+Dec 14 16:28:45 centos8.linuxvmimages.local systemd-coredump[84454]: Process 84452 (simple_notifyin) of user 0 dumped core.
+-- Subject: Process 84452 (simple_notifyin) dumped core
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- Documentation: man:core(5)
+--
+-- Process 84452 (simple_notifyin) crashed and dumped core.
+--
+-- This usually indicates a programming error in the crashing program and
+-- should be reported to its vendor as a bug.
+Dec 14 16:28:45 centos8.linuxvmimages.local systemd[1]: myservice.service: Main process exited, code=dumped, status=11/SEGV
+Dec 14 16:28:45 centos8.linuxvmimages.local systemd[1]: myservice.service: Failed with result 'core-dump'.
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+--
+-- The unit myservice.service has entered the 'failed' state with result 'core-dump'.

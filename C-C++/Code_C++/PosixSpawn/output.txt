@@ -1,0 +1,29 @@
+========================
+$ ./main ls
+
+Run command: ls
+Child pid: 3911
+status: 0
+WEXITSTATUS(status): 0
+OK
+
+
+========================
+$ ./main "apt install cat"
+Run command: lss
+Child pid: 2851
+sh: lss: command not found
+status: 32512
+WEXITSTATUS(status): 127
+Error
+
+
+========================
+$ ./main "apt install cat"
+Run command: apt install cat
+Child pid: 3003
+E: Could not open lock file /var/lib/dpkg/lock-frontend - open (13: Permission denied)
+E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), are you root?
+status: 25600
+WEXITSTATUS(status): 100
+Error

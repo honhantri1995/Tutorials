@@ -1,0 +1,41 @@
+
+---
+req: req A
+testcase:
+- name: testcase 1
+  precondition: precondition for testcase 1
+  step:
+  - step 1 for testcase 1
+  - step 2 for testcase 1
+  expect:
+  - expect for testcase 1
+  - opt: optional expect for testcase 1
+
+- name: testcase 2
+  precondition: precondition for testcase 2
+  step:
+  - step 1 for testcase 2
+  - step 2 for testcase 2
+  expect:
+  - expect for testcase 2
+
+---
+req: req B
+testcase:
+- name: testcase 1
+  precondition: precondition for testcase 1
+  step:
+  - step 1 for testcase 1
+  - step 2 for testcase 1
+  expect:
+  - expect for testcase 1
+
+- name: testcase 2
+  precondition: precondition for testcase 2
+  step:
+  - step 1 for testcase 2
+  - step 2 for testcase 2
+  expect:
+  - expect for testcase 2
+  - opt: optional expect for testcase 2
+...

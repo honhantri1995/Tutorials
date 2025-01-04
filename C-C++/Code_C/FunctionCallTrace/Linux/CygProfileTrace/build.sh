@@ -1,0 +1,1 @@
+gcc -g *.c -finstrument-functions -ldl -Wl,--export-dynamic -o test_trace

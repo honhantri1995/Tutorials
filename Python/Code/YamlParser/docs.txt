@@ -1,0 +1,4 @@
+https://quickref.me/yaml.html#google_vignette
+https://pynative.com/python-yaml/
+https://www.w3schools.io/file/yaml-cheatsheet-syntax/
+https://www.slingacademy.com/article/yaml-syntax-the-complete-cheat-sheet/

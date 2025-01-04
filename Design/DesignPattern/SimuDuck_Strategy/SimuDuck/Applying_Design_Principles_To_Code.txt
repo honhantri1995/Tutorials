@@ -1,0 +1,14 @@
+Duck base class only needs to know IFlyBehaviors. It doesn't care which fly behaviors. (Design Principle 2)
+
+Each type of duck (Duck derived classes) doesn't need to know IFlyBehaviors.
+And vice versa, each behavior doesn't need to know which type of duck it belongs to.
+--> Types of duck are totally separate from their behaviors (most varied elements) (Design Principle 1)
+
+Client class need to know all duck types and their behaviors (concrete, not interface)
+--> It's the only place where we allocate and deallocate memory
+--> When a new behavior is added, main() is the only place that needs to be modified
+
+main() only needs to know Client
+
+
+

@@ -1,0 +1,28 @@
+[
+    {
+        "id": "btcusdt",
+        "position": "long",
+        "leverage": 5,
+        "orders": {
+            "entries": [],
+            "sl": {
+                "id": 0,
+                "quantity": 0
+            },
+            "tps": []
+        }
+    },
+    {
+        "id": "xrpusdt",
+        "position": "long",
+        "leverage": 20,
+        "orders": {
+            "entries": [],
+            "sl": {
+                "id": 0,
+                "quantity": 0
+            },
+            "tps": []
+        }
+    }
+]

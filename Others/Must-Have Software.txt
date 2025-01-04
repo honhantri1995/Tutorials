@@ -1,0 +1,50 @@
+================================================================================
+CODE:
+Git (+ TortoiseGit)
+SVN (+ TortoiseSVN)
+Notepad++
+Visual Studio Code (+ necessary extensions)
+IDE (Visual Studio Community or Eclipse)
+WinMerge (+ global backup folder, ignore-comment plugin)
+Python
+
+================================================================================
+OTHERS:
+Chrome or MS Edge (with TabSaver, AdBlock, LabanDict, The Great Suspender)
+Unikey
+7-Zip (or WinRAR)
+Foxit Reader
+FreeCommander (with favourite folders)
+Simple Sticky Note
+MS Office (or WPS) + OutLook
+Skype
+TeamViewer (Unpack portable, TVTools AlterID)
+Internet Download Manager
+VMWare or VirtualBox (shared folder, VMWare Tools/VB Guest Additions)
+Greenshot
+Dictionary (QTranslate, Popup Translator)
+OpenSSH (Server and Client)
+FileZilla FTP
+Swiss File Knife (EOL convert, Tab-space convert, etc. For how to use: https://stackoverflow.com/a/16886243)
+Dictionary (QTranslate, Popup Translator)
+OpenSSH (Server and Client)
+
+================================================================================
+C/C++:
+MinGW-w64
+
+================================================================================
+LINUX ON WINDOWS:
+Windows Terminal
+WSL2
+MobaXterm
+
+================================================================================
+WEBSITES:
+Cheatsheet (thousands of commands): https://devhints.io/
+Whole file translator: https://www.onlinedoctranslator.com/en/translationform
+Image translator: https://www.i2ocr.com/free-online-japanese-ocr
+Convert WMV to MP4: https://www.freeconvert.com/wmv-to-mp4/ (nhanh, ouput size rất nhỏ)
+Video compression: https://www.xconvert.com/downloads
+Convert MSWord to HTML (with format): https://wordtohtml.net/content/the-ultimate-guide-to-converting-word-to-html/
+Draw UI: balsamiq.com

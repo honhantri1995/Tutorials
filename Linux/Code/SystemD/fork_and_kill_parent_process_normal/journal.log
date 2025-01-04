@@ -1,0 +1,28 @@
+Dec 15 04:25:59 centos8.linuxvmimages.local systemd[1]: Starting My SystemD Service...
+-- Subject: Unit myservice.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+--
+-- Unit myservice.service has begun starting up.
+Dec 15 04:26:00 centos8.linuxvmimages.local myservice[175730]: Service 175730 is running...
+Dec 15 04:26:00 centos8.linuxvmimages.local myservice[175730]: Service 175731 was forked succcessfully from service 175730
+Dec 15 04:26:00 centos8.linuxvmimages.local myservice[175730]: Service 175730 will be stopped here
+Dec 15 04:26:00 centos8.linuxvmimages.local systemd[1]: Started My SystemD Service.
+-- Subject: Unit myservice.service has finished start-up
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+--
+-- Unit myservice.service has finished starting up.
+--
+-- The start-up result is done.
+Dec 15 04:26:00 centos8.linuxvmimages.local myservice[175730]: Service 175731 notified READY=1
+Dec 15 04:26:05 centos8.linuxvmimages.local myservice[175730]: Service 175731 notified WATCHDOG=1
+Dec 15 04:26:10 centos8.linuxvmimages.local myservice[175730]: Service 175731 notified WATCHDOG=1
+Dec 15 04:26:15 centos8.linuxvmimages.local myservice[175730]: Service 175731 notified WATCHDOG=1
+Dec 15 04:26:20 centos8.linuxvmimages.local myservice[175730]: Service 175731 notified WATCHDOG=1
+Dec 15 04:26:20 centos8.linuxvmimages.local systemd[1]: myservice.service: Succeeded.
+-- Subject: Unit succeeded
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+--
+-- The unit myservice.service has successfully entered the 'dead' state.

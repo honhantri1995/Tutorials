@@ -1,0 +1,13 @@
+[Unit]
+Description=My SystemD Service
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/myservice
+TimeoutStartSec=5
+WatchdogSec=2
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

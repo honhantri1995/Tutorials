@@ -1,0 +1,13 @@
+[Unit]
+Description=My SystemD Service
+
+[Service]
+Type=notify
+ExecStart=/usr/bin/myservice
+TimeoutStartSec=5
+WatchdogSec=1
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

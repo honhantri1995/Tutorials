@@ -1,0 +1,8 @@
+.vs/
+.vscode/
+Debug/
+__pycache__/
+build/
+*.vcxproj.user
+*~$*
+~*.tmp

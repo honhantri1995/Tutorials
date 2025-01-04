@@ -1,0 +1,22 @@
+Dec 15 05:06:11 centos8.linuxvmimages.local systemd[1]: Starting My SystemD Service...
+-- Subject: Unit myservice.service has begun start-up
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+--
+-- Unit myservice.service has begun starting up.
+Dec 15 05:06:11 centos8.linuxvmimages.local myservice[189206]: Service is running...
+Dec 15 05:06:16 centos8.linuxvmimages.local systemd[1]: myservice.service: start operation timed out. Terminating.
+Dec 15 05:06:16 centos8.linuxvmimages.local systemd[1]: myservice.service: Failed with result 'timeout'.
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+--
+-- The unit myservice.service has entered the 'failed' state with result 'timeout'.
+Dec 15 05:06:16 centos8.linuxvmimages.local systemd[1]: Failed to start My SystemD Service.
+-- Subject: Unit myservice.service has failed
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+--
+-- Unit myservice.service has failed.
+--
+-- The result is failed.

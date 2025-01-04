@@ -1,0 +1,239 @@
+=================================
+1. Run with Python
+
+$ python run.py
+
+The result is:
+    Running ...
+    Processing ...
+    Ready in: 0.354531 seconds, loops = 10000000
+
+This means it takes 354 milliseconds to complete.
+
+=================================
+2. Create executable with PyInstaller
+
+To create an executable, run:
+$ pyinstaller --onefile --name="myapp" --add-data="README;README" run.py
+
+In the 'project' directory two new directories have been added:
+    build
+    dist
+Our executable is in the dist directory, it is almost 10 MB.
+
+To execute it:
+$ dist/myapp
+
+And the result:
+    Running ...
+    Processing ...
+    Ready in: 0.422389 seconds, loops = 10000000
+
+This is about 20% slower than the non-PyInstaller version.
+
+=================================
+3. Add Cython
+
+To compile, run:
+$ python setup.py build_ext --inplace
+
+This created a build_cythonize directory but more important, it created a new file in our module directory:
+
+└── some_package
+    ├── __init__.py
+    ├── some_classes.cp310-win_amd64.pyd
+    └── some_classes.py
+
+The file 'some_classes.cp310-win_amd64.pyd' is the compiled version of some_classes.py
+Note: On Windows, it's 'some_classes.cp310-win_amd64.pyd'. On Linux, it's 'some_classes.cpython-38-x86_64-linux-gnu.so'
+
+The beauty of Cython is that we now can run our application in the same way without changing anything:
+$ python run.py
+
+The result is:
+    Running ...
+    Processing ...
+    Ready in: 0.112203 seconds, loops = 10000000
+
+It runs 3-4 times faster than without Cython!
+
+=================================
+4. Create executable with PyInstaller using the compiled file
+
+To create an executable, run:
+$ generate_exe.cmd
+
+Our executable is in the dist directory, it is almost 7 MB. So it's smaller than in Step 2
+
+To execute it:
+$ dist/myapp
+
+And the result:
+    Running ...
+    Processing ...
+    Ready in: 0.128354  seconds, loops = 10000000
+
+The result is almost same as Step 3
+
+
+=================================
+5. Much faster with static Cython type declarations
+
+At certain locations in our code we can add static Cython type declarations. 
+To do this we must first import Cython. In some_classes.py we add type declarations for 'i' and 'loops'.
+
+    # app/some_package/some_classes.py
+    import cython
+
+    class SomeClass1:
+        def process(self):
+
+            i: cython.int # here
+            loops: cython.int # and here
+
+            print('Processing ...')
+            a = 'a string'
+            loops = 0
+            for i in range(10000000):
+                b = a
+                loops += 1
+            return loops
+
+Now go back to step 3 and run:
+$ python setup.py build_ext --inplace
+
+Then:
+$ python run.py
+
+The result is:
+    Running ...
+    Processing ...
+    Ready in: 0.038471 seconds, loops = 10000000
+
+Amazing! With a simple change, our program is running 10 times faster!
+
+Of course, you can also go back to step 4 to Create executable file as well!
+
+=================================
+Step 6 (additional): Compiling all files of a package
+I also wanted to compile all files of my package. But I could not get this working. I tried in setup.py:
+        [
+            Extension("app.some_package.some_classes.*", 
+                ["app/some_package/some_classes/*.py"]),
+        ],
+The result was:
+    ValueError: 'app/some_package/some_classes/*.py' doesn't match any files
+
+The only way I could get this to work is by creating an almost identical file compile.py in the 'app' directory.
+    # app/compile.py
+    from setuptools import find_packages, setup
+    from setuptools.extension import Extension
+
+    from Cython.Build import cythonize
+    from Cython.Distutils import build_ext
+
+    setup(
+        name="packages",
+        version='0.100',
+        ext_modules=cythonize(
+            [
+            Extension('some_package.*', ['some_package/*.py']),
+            ],
+            build_dir="build_cythonize",
+            compiler_directives={
+                'language_level' : "3",
+                'always_allow_keywords': True,
+            },
+        ),
+        cmdclass=dict(
+            build_ext=build_ext
+        ),
+        packages=['some_package']
+    )
+
+and then running in the 'app' directory:
+    $ python compile.py build_ext --inplace
+
+Now both files are compiled. We can go back to step 4, and add them using --add-binary like before.
+
+
+=================================================================================
+APPLY TO MULTI-THREAD
+
+First, let's try with single thread:
+    # some_classes.py
+
+    import cython
+    import time
+
+    class SomeClass1:
+        def countdown(self, n):
+            while n>0:
+                n -= 1
+
+        def process(self):
+            COUNT = 100000000
+
+            start = time.time()
+            self.countdown(COUNT)
+            end = time.time()
+
+            print('Time taken in seconds -', end - start)
+
+Go back to step 1, the result is:
+    Running ...
+    Time taken in seconds - 3.257696294784546
+    Ready in: 3.258697 seconds, loops = None
+
+Now, do step 3. The result is:
+    Running ...
+    Time taken in seconds - 1.65217489776611328
+    Ready in: 1.65217 seconds, loops = None
+
+
+=====
+Now, let's try with two threads:
+    # some_classes.py
+
+    import cython
+    import time
+    from threading import Thread
+
+    class SomeClass1:
+        def countdown(self, n):
+            while n>0:
+                n -= 1
+
+        def process(self):
+            COUNT = 100000000
+
+            t1 = Thread(target=self.countdown, args=(COUNT//2,))
+            t2 = Thread(target=self.countdown, args=(COUNT//2,))
+
+            start = time.time()
+            t1.start()
+            t2.start()
+            t1.join()
+            t2.join()
+            end = time.time()
+
+            print('Time taken in seconds -', end - start)
+
+
+Go back to step 1, the result is:
+    Running ...
+    Time taken in seconds - 3.095982313156128
+    Ready in: 3.096986 seconds, loops = None
+
+So, it's a bit faster than the single-thread version of step 1
+
+Now, do step 3. The result is:
+    Running ...
+    Time taken in seconds - 1.6407489776611328
+    Ready in: 1.64167 seconds, loops = None
+
+So, it's still a bit faster than the single-thread version of step 3
+
+
+
+REF: https://www.peterspython.com/en/blog/using-pyinstaller-and-cython-to-create-a-python-executable

@@ -1,0 +1,7 @@
+Project Closure
+
+Last modified by Phuc Ngo Hoang on 2021/11/06, 16:01
+Giới thiệu
+Một khi các hạng mục giao hàng (project deliverables) đã được hoàn tất và đã được khách hàng thông qua, chấp nhận (user acceptance test completion), thì dự án đã bước vào giai đoạn Kết thúc dự án (Project Closure). Trong giai đoạn này thì giám đốc dự án (Project Manager) sẽ thực hiện những bước cuối cùng để đảm bảo rằng dự án của mình sẽ được công nhận là đã hoàn thành các mục tiêu dự án, giao hàng thành công đáp ứng mong đợi của khách hàng, kết thúc các hoạt động cập nhật thông tin vào tài liệu dự án, giải phóng các nguồn lực dự án, ... (project closeout), cũng như đã hoàn tất các thủ tục chuyển giao dự án (hand-over the project) cho giai đoạn bảo trì, bảo hành (maintenance and warranty).
+
+Nội dung chi tiết, hãy xem trong slides đính kèm.

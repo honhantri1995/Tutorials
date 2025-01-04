@@ -1,0 +1,217 @@
+{
+	"NoteOver": {
+		"prefix": "noteOver",
+		"body": [
+			"NOTE OVER ${1:participant}${2: #green}",
+			"\t$0",
+			"END NOTE"
+		],
+		"description": "Note Over"
+	},
+
+	"NoteOver_SingleLine": {
+		"prefix": "noteOver_SingleLine",
+		"body": [
+			"NOTE OVER ${1:participant}${2: #green}: ${3:Old implementation}"
+		],
+		"description": "Note Over Single Line"
+	},
+
+	"NoteRightSequence": {
+		"prefix": "noteRightSequence",
+		"body": [
+			"NOTE RIGHT ${1:participant} #pink: "
+		],
+		"description": "Note Right in Sequence diagram"
+	},
+
+	"Loop": {
+		"prefix": "loop",
+		"body": [
+			"LOOP ${1:<color #green>}${2:condition}",
+			"\t$0",
+			"END"
+		],
+		"description": "Loop"
+	},
+
+	"Participant": {
+		"prefix": "participant",
+		"body": [
+			"PARTICIPANT ${1:fullName} as ${2:shortName}"
+		],
+		"description": "Participant"
+	},
+
+	"Call": {
+		"prefix": "call",
+		"body": [
+			"${1:participant1} -${2:[#green]}> ${3:participant2} ++: ${4:<color #green>}${5:message}",
+			"\tREF OVER ${3:participant2}: Refer to ${6:number}",
+			"RETURN ${7:<color #green>}${8:retval}"
+		],
+		"description": "Call"
+	},
+
+	"UMLSequence": {
+		"prefix": "umlSequence",
+		"body": [
+			"The flow sequence of ``${1:class}::${2:function}(${3:param})`` is as below:",
+			"\t.. uml::",
+			"\r",
+			"\t\t@startuml images/${4:number}.png",
+			"\t\tskinparam NoteBackgroundColor #DDDDDD",
+			"\t\tskinparam NoteBorderColor #666666",
+			"\r",
+			"\t\tTITLE ${4:number} ${5:title}",
+			"\t\tPARTICIPANT ${1:class} AS ${6:shortClass}",
+			"\r",
+			"\t\t-${7:[#green]}> ${6:shortClass}: ${8:<color #green>}${2:function}(${3:param})",
+			"\t\tACTIVATE ${6:shortClass}",
+			"\r",
+			"\t\t<${7:[#green]}-- ${6:shortClass}: ${8:<color #green>}${9:retval}",
+			"\t\tDEACTIVATE ${6:shortClass}",
+			"\t\t@enduml"
+		],
+		"description": "UMLSequence"
+	},
+
+	"OptSequence": {
+		"prefix": "optSequence",
+		"body": [
+			"OPT ${1:<color #green>}${2:condition}",
+			"\t$0",
+			"END"
+		],
+		"description": "Option in Sequence diagram"
+	},
+
+	"AltSequence": {
+		"prefix": "altSequence",
+		"body": [
+			"ALT ${1:<color #green>}${2:condition1}",
+			"\t$3",
+			"ELSE ${1:<color #green>}${4:condition2}",
+			"\t$5",
+			"END"
+		],
+		"description": "Alt in Sequence diagram"
+	},
+
+	"Ref": {
+		"prefix": "ref",
+		"body": [
+			"REF OVER ${1:participant}: Refer to ${2:number}"
+		],
+		"description": "Ref"
+	},
+
+	"Pagebreak": {
+		"prefix": "pagebreak",
+		"body": [
+			".. raw:: html",
+			"\r",
+			"\t<style type=\"text/css\" media=\"print\">",
+			"\t\tdiv.documentwrapper {",
+			"\t\t\tfloat: none;",
+			"\t\t}",
+			"\t</style>",
+			"\r",
+			".. |pagebreak| raw:: html",
+			"\r",
+			"\t<div style=\"page-break-after:always\" />",
+			"\r",
+			".. raw:: html",
+			"\r",
+			"\t<style type=\"text/css\">",
+			"\t<!--",
+			"\ttable{page-break-inside:avoid;}",
+			"\t-->",
+			"\r",
+			"\t</style>"
+		],
+		"description": "Ref"
+	},
+
+	"Spec": {
+		"prefix": "spec",
+		"body": [
+			"------------------------------------------------------------------",
+			"**${1:heading}**",
+			"------------------------------------------------------------------"
+		],
+		"description": "Spec"
+	},
+
+	"Subspec": {
+		"prefix": "subspec",
+		"body": [
+			"**${1:heading}**",
+			"------------------------------------------------------------------",
+			"\t1. Description",
+			"\t\t- ",
+			"\r",
+			"\t2. Solution",
+			"\t\t- ",
+			"\r",
+			"\t3. Details of Implementation",
+			"\t\t- ",
+			"\r"
+		],
+		"description": "Subspec"
+	},
+
+	"UMLActivity": {
+		"prefix": "umlActivity",
+		"body": [
+		  ".. uml::\r",
+		  "\r",
+		  "\t@startuml images/${1:number}.png\r",
+		  "\tSKINPARAM defaultTextAlignment center\r",
+		  "\r",
+		  "\tTITLE ${1:number}. ${2:Title}\r",
+		  "\tSTART\r",
+		  "\r",
+		  "\t:${3:FirstAct};\r",
+		  "\t:${4:SecondAct};\r",
+		  "\r",
+		  "\tSTOP\r",
+		  "\t@enduml"
+		],
+		"description": "UMLActivity"
+	  },
+
+	  "AltActivity": {
+		"prefix": "altActivity",
+		"body": [
+		  "IF (${1:condition1}) THEN (${2:No})\r",
+		  "\t:${3:act1};\r",
+		  "ELSE (${4:Yes})\r",
+		  "\t:${5:act2};\r",
+		  "ENDIF"
+		],
+		"description": "Alt in Activity diagram"
+	  },
+
+	  "ForkActivity": {
+		"prefix": "forkActivity",
+		"body": [
+		  "FORK\r",
+		  "\t:${1:act1};\r",
+		  "FORK AGAIN\r",
+		  "\t:${2:act2};\r",
+		  "END FORK\r"
+		],
+		"description": "Fork in Activity diagram"
+	  },
+
+	  "NoteActivity": {
+			"prefix": "noteActivity",
+			"body": [
+				"NOTE ${1:RIGHT} ${2:color}: "
+			],
+			"description": "Note in Activity diagram"
+	  }
+
+
+}

@@ -1,0 +1,21 @@
+Project Planning
+
+Last modified by Phuc Ngo Hoang on 2021/10/25, 01:55
+
+"Một người lo, bằng một kho người làm"
+-- Tục ngữ Việt Nam --
+
+Giới thiệu
+Tổng thống thứ 34 của nước Mỹ, Dwight D. Eisenhower, đã nói "Plans are nothing. Planning is everything", tạm dịch là các bản kế hoạch không là gì cả, việc lập kế hoạch mới quan trọng. Tương tự như vậy, đối với các Giám đốc dự án - PM, thì việc lập kế hoạch cho một dự án cũng phải được coi là một trong những tác vụ quan trọng bậc nhất, góp phần cho dự án đạt được các mục tiêu đã đề ra, đáp ứng sự mong đợi của khách hàng, dẫn dắt đội ngũ của mình (project team members) hoàn thành nhiệm vụ do cấp trên giao phó, đem lại doanh thu cho đơn vị.
+
+Trong bộ quy trình M&C Project Management Processes (được soạn thảo có tham khảo đến các tiêu chuẩn quốc tế ISO21500:2012 và PMBOK 6th Edition), thì quy định: quy trình lập kế hoạch dự án (Project Planning Process) đòi hỏi PM phải thực hiện một cách nghiêm ngặt (discipline), đề ra các biện pháp, phương pháp và công cụ ... nhằm kiểm soát, điều chỉnh hữu hiệu các mãng quản lý (managerial areas): phạm vi (scope), chi phí (cost), thời gian (time), chất lượng (quality), rủi ro (risk), vấn đề (issue), liên lạc (communication) .. trong dự án.
+
+Bài viết này là tổng hợp các bài học bổ ích rút ra từ những chia sẽ của các PM có kinh nghiệm, để tóm tắt lại thành một phương pháp lên kế hoạch dự án, với 6 bước thực hiện cơ bản; Cũng như thiết lập các quy định, thông số định mức, phương pháp giám sát các mãng quản lý (managerial areas) để kiểm soát chặt chẽ quá trình thực thi tạo ra các kết quả của dự án. Phương pháp này cũng nhấn mạnh đến 6 trọng tâm như:
+
+Importance of The Project Definition Document: Tầm quan trọng của việc tổng hợp và xác thực các thông tin ban đầu của dự án.
+Deliverables and Work Breakdown Structure (WBS): Định nghĩa các hạng mục giao hàng từ yêu cầu của dự án, và việc chia nhỏ thành các các việc cần thực hiện (theo cấu trúc cây quan hệ) để tạo ra hạng mục giao hàng.
+Acceptance Criteria: Việc xác lập tiêu chí chấp thuận của các mục giao hàng.
+Resources and Estimates: Nguồn lực thực hiện và ước lượng công
+Scheduling and Resource Loading: Lập lịch trình thực hiện và bảng phân công nhân sự thực hiện công tác. 
+Elements of Project Control: các quy định, phương pháp, định múc của các yếu tố kiểm soát dự án.
+Nội dung chi tiết, hãy xem trong slides đính kèm.

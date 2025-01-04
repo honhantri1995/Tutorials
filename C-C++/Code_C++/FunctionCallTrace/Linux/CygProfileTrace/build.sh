@@ -1,0 +1,1 @@
+g++ -g *.cpp -finstrument-functions -ldl -Wl,--export-dynamic -o test_trace

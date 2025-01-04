@@ -1,0 +1,40 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "testcase": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "Name of the testcase"
+                    },
+                    "precondition": {
+                        "type": "string",
+                        "description": "Precondition for the testcase"
+                    },
+                    "step": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        },
+                        "description": "Steps for the testcase"
+                    },
+                    "expect": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        },
+                        "description": "Expected outcomes for the testcase"
+                    }
+                },
+                "required": ["name", "precondition", "step", "expect"],
+                "description": "Details of a testcase"
+            }
+        }
+    },
+    "required": ["testcase"],
+    "description": "Schema for defining testcases"
+}

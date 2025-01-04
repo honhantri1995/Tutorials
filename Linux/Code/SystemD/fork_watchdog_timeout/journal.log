@@ -1,0 +1,28 @@
+Dec 15 02:26:34 centos8.linuxvmimages.local systemd[1]: Started My SystemD Service.
+-- Subject: Unit myservice.service has finished start-up
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+--
+-- Unit myservice.service has finished starting up.
+--
+-- The start-up result is done.
+Dec 15 02:26:34 centos8.linuxvmimages.local myservice[137906]: Service 137907 notified READY=1
+Dec 15 02:26:36 centos8.linuxvmimages.local systemd[1]: myservice.service: Watchdog timeout (limit 2s)!
+Dec 15 02:26:36 centos8.linuxvmimages.local systemd[1]: myservice.service: Killing process 137907 (fork_notifying_) with signal SIGABRT.
+Dec 15 02:26:36 centos8.linuxvmimages.local systemd-coredump[137919]: Process 137907 (fork_notifying_) of user 0 dumped core.
+-- Subject: Process 137907 (fork_notifying_) dumped core
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+-- Documentation: man:core(5)
+--
+-- Process 137907 (fork_notifying_) crashed and dumped core.
+--
+-- This usually indicates a programming error in the crashing program and
+-- should be reported to its vendor as a bug.
+Dec 15 02:26:36 centos8.linuxvmimages.local systemd[1]: myservice.service: Main process exited, code=dumped, status=6/ABRT
+Dec 15 02:26:36 centos8.linuxvmimages.local systemd[1]: myservice.service: Failed with result 'watchdog'.
+-- Subject: Unit failed
+-- Defined-By: systemd
+-- Support: https://access.redhat.com/support
+--
+-- The unit myservice.service has entered the 'failed' state with result 'watchdog'.

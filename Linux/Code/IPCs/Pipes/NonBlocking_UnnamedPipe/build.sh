@@ -1,0 +1,1 @@
+gcc -o nonblocking_unnamedPipe nonblocking_unnamedPipe.c;
