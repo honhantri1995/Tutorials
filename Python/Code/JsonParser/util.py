@@ -19,7 +19,7 @@ def object_to_dict(obj: object) -> dict:
         return obj.__dict__
     return None
 
-def object_list_to_dict(objs: list):
+def objects_to_dicts(objs: list):
     dicts = []
     for obj in objs:
         dicts.append(object_to_dict(obj))

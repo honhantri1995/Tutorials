@@ -1,5 +1,0 @@
-[2023-12-24 15:18:08.095] [INFO] [5580] [20756] [main.py:13 write_log()] This is info log
-[2023-12-24 15:18:08.095] [INFO] [5580] [20756] [main.py:14 write_log()] This is info2 log
-[2023-12-24 15:18:08.105] [WARNING] [5580] [20756] [main.py:15 write_log()] This is warning log
-[2023-12-24 15:18:08.106] [ERROR] [5580] [20756] [main.py:16 write_log()] This is error log
-[2023-12-24 15:18:08.107] [CRITICAL] [5580] [20756] [main.py:17 write_log()] This is critical log
