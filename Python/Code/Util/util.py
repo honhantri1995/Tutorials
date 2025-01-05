@@ -4,6 +4,7 @@ import math
 import os
 import json
 import glob
+import shutil
 
 class Time:
     class TIMESTAMP_UNIT:
@@ -158,6 +159,9 @@ class IO:
                 filename = os.path.splitext(filename)[0]
             return filename
 
+        def extract_dirname_from_dirpath(dirpath: str):
+            return dirpath.split(os.path.sep)[-1]
+
     class Directory:
         def get_current_absolute_dirpath():
             return os.path.abspath(os.getcwd())
@@ -179,6 +183,10 @@ class IO:
                 else:
                     os.mkdir(path)
 
+        def delete(path: str):
+            if os.path.exists(path):
+                shutil.rmtree(path)
+
     class File:
         def get_size(path, unit='byte'):
             size_in_byte = os.stat(path).st_size
@@ -196,6 +204,16 @@ class IO:
         def create(path: str):
             if not os.path.isfile(path):
                 with open(path, 'w', encoding='utf-8'): pass
+
+        def delete(path: str):
+            try:
+                os.remove(path)
+            except FileNotFoundError:
+                print(f"File '{path}' does not exist")
+            except PermissionError:
+                print(f"Permission denied: Unable to delete '{path}'")
+            except Exception as e:
+                print(f"An error occurred: {e}")
 
 class Number:
     def truncate(number: float, precision: int):
