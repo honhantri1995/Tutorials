@@ -1,0 +1,47 @@
+<testsuite name="tutorial.showing off behave" tests="3" errors="0" failures="0" skipped="0" time="0.002999" timestamp="2024-11-16T00:44:00.404459" hostname="DESKTOP-66HU6MD"><testcase classname="tutorial.showing off behave" name="run a simple test" status="passed" time="0.0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: run a simple test
+    Given we have behave installed ... passed in 0.000s
+    When we implement a test ... passed in 0.000s
+    Then behave will test it for us ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="tutorial.showing off behave" name="run a simple test with parameters" status="passed" time="0.000999"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: run a simple test with parameters
+    Given we have behave installed ... passed in 0.000s
+    When we implement 2 tests ... passed in 0.000s
+    Then behave will test them for us ... passed in 0.001s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="tutorial.showing off behave" name="DID is 0x123" status="passed" time="0.001999"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: DID is 0x123
+    Given we have behave installed ... passed in 0.001s
+    When run cmd "sldd abc xyz" to enable radio state ... passed in 0.000s
+    And run cmd "sldd 123 456" to read did "0x123" ... passed in 0.001s
+    Then value of did 0x123 is 0x01 ... passed in 0.000s
+    When run cmd "sldd abc xyz" to enable radio state ... passed in 0.000s
+    And run cmd "sldd 123 456" to read did "0x123" ... passed in 0.000s
+    Then value of did 0x123 is 0x01 ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+run
+run
+expect
+run
+run
+expect
+
+]]>
+</system-out></testcase></testsuite>
