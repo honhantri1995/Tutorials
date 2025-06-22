@@ -5,11 +5,11 @@ void fn(int n, string recDepth) {
     printf("%sCall fn(%d)\n", recDepth.c_str(), n);
     if (n > 2) {
         fn(n - 1, recDepth + "  ");
-        printf("%sReturn call to fn(%d)\n", recDepth.c_str(), n, n - 1);
+        printf("%sReturn call to fn(%d)\n", recDepth.c_str(), n);
         fn(n - 2, recDepth + "  ");
-        printf("%sReturn call to fn(%d)\n", recDepth.c_str(), n, n - 2);
+        printf("%sReturn call to fn(%d)\n", recDepth.c_str(), n);
         fn(n - 3, recDepth + "  ");
-        printf("%sReturn call to fn(%d)\n", recDepth.c_str(), n, n - 3);
+        printf("%sReturn call to fn(%d)\n", recDepth.c_str(), n);
     }
     printf("%sBase case", recDepth.c_str());
 
