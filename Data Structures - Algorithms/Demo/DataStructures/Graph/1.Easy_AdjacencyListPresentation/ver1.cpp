@@ -11,6 +11,12 @@ void addEdge(vector<vector<int>>& adj, int i, int j) {
     adj[j].emplace_back(i);     // Undirected
 }
 
+/*
+    0: 1 2
+    1: 0 2
+    2: 0 1 3
+    3: 2
+*/
 void display(vector<vector<int>> adj) {
     for (int i = 0; i < adj.size(); i++) {
         cout << i << ":";
