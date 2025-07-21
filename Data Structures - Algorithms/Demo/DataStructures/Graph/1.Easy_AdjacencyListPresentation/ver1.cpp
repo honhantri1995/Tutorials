@@ -7,8 +7,8 @@ void addEdge(vector<vector<int>>& adj, int i, int j) {
         cout << "FAIL" << endl;
         return;
     }
-    adj[i].emplace_back(j);
-    adj[j].emplace_back(i);     // Undirected
+    adj[i].emplace_back(j); // Node i is neighbor of node j
+    adj[j].emplace_back(i); // Node j is neighbor of node 
 }
 
 /*

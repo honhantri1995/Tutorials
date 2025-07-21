@@ -4,8 +4,8 @@
 using namespace std;
 
 void addEdge(map<int, vector<int>>& adj, int i, int j) {
-    adj[i].emplace_back(j);
-    adj[j].emplace_back(i);     // Undirected
+    adj[i].emplace_back(j); // Node i is neighbor of node j
+    adj[j].emplace_back(i); // Node j is neighbor of node 
 }
 
 void display(map<int, vector<int>> adj) {
